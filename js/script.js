@@ -73,3 +73,21 @@ for (let i = 0; i < teamMember.length; i++) {
 }
 
 
+// MILESTONE 2:
+// Stampare le stesse informazioni su DOM sottoforma di stringhe
+
+
+// <!-- <li>
+// name: "Wayne Barnett",
+// </li>
+// <li>
+//  role: "founder e CEO",
+// </li>
+// <li>
+//  image: "wayne-barnett-founder-ceo.jpg",
+// </li>
+
+
+let ulElement = document.querySelector(".list");
+
+for
