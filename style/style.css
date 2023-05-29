@@ -1,0 +1,6 @@
+.list li:nth-child(4){
+    /* list-style-type: none; */
+}
+.li-divider{
+    list-style-type: none;
+}

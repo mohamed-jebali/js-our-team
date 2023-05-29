@@ -99,7 +99,6 @@ for(let i = 0; i < teamMember.length; i++){
     ulElement.appendChild(liElement);
 
     liElement = document.createElement("li");
-    liElement.innerHTML = "----------------";
-    liElement.classList.add("mb-3")
+    liElement.classList.add("mb-4","li-divider")
     ulElement.appendChild(liElement);
 }
