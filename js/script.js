@@ -25,9 +25,9 @@
 
 
 
-// creo un array
-// creare i membri del team
-// fare console log per verificare il corretto funzionamento
+
+// MILESTONE 0:
+// Creare l’array di oggetti con le informazioni fornite.
 
 let teamMember = [
 
@@ -65,6 +65,9 @@ let teamMember = [
     
 ];
 
+// MILESTONE 1:
+// Stampare su console, per ogni membro del team, le informazioni di nome, ruolo e la stringa della foto
+
 for (let i = 0; i < teamMember.length; i++) {
     console.log("name: ",teamMember[i].name);
     console.log("role: ",teamMember[i].role);
@@ -77,17 +80,26 @@ for (let i = 0; i < teamMember.length; i++) {
 // Stampare le stesse informazioni su DOM sottoforma di stringhe
 
 
-// <!-- <li>
-// name: "Wayne Barnett",
-// </li>
-// <li>
-//  role: "founder e CEO",
-// </li>
-// <li>
-//  image: "wayne-barnett-founder-ceo.jpg",
-// </li>
-
 
 let ulElement = document.querySelector(".list");
 
-for
+
+for(let i = 0; i < teamMember.length; i++){
+    
+    let liElement = document.createElement("li");
+    liElement.innerHTML = "name: " + teamMember[i].name;
+    ulElement.appendChild(liElement);
+
+    liElement = document.createElement("li");
+    liElement.innerHTML = "role: " + teamMember[i].role;
+    ulElement.appendChild(liElement);
+
+    liElement = document.createElement("li");
+    liElement.innerHTML = "image: " + teamMember[i].image;
+    ulElement.appendChild(liElement);
+
+    liElement = document.createElement("li");
+    liElement.innerHTML = "----------------";
+    liElement.classList.add("mb-3")
+    ulElement.appendChild(liElement);
+}
