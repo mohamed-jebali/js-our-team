@@ -64,5 +64,12 @@ let teamMember = [
     },
     
 ];
-console.log(teamMember.name);
+
+for (let i = 0; i < teamMember.length; i++) {
+    console.log("name: ",teamMember[i].name);
+    console.log("role: ",teamMember[i].role);
+    console.log("image: ",teamMember[i].image);
+    console.log("----------");
+}
+
 
