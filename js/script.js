@@ -102,3 +102,7 @@ for(let i = 0; i < teamMember.length; i++){
     liElement.classList.add("mb-4","li-divider")
     ulElement.appendChild(liElement);
 }
+
+// BONUS 1:
+// Trasformare la stringa foto in una immagine effettiva
+
