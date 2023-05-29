@@ -64,5 +64,5 @@ let teamMember = [
     },
     
 ];
-console.log(teamMember);
+console.log(teamMember.name);
 
